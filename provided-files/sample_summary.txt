@@ -1,0 +1,5 @@
+concatenate two string arrays into one
+return true if the contents of the internal array bytes and the provided array data match
+find the index of a search string within a string
+close the socket connection
+check if a string is empty or null

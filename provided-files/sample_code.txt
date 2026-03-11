@@ -1,0 +1,5 @@
+public static String[] concatenateStringArrays(String[] array1, String[] array2) { if (Objects.isEmpty(array1)) { return array2; } if (Objects.isEmpty(array2)) { return array1; } String[] newArr = new String[array1.length + array2.length]; System.arraycopy(array1, 0, newArr, 0, array1.length); System.arraycopy(array2, 0, newArr, array1.length, array2.length); return newArr; }
+public boolean equals(final byte[] data, int offset, final int len) { final byte[] bytes = this.bytes; if (len != bytes.length) return false; for (int i = 0; i < len; ) { if (bytes[i++] != data[offset++]) { return false; } } return true; }
+public static int indexOf(String str, String searchStr) { if (str == null || searchStr == null) { return -1; } return str.indexOf(searchStr); }
+public void close() { if (this.socket != null) { try { this.socket.close(); } catch (IOException e) { log.error("Error closing socket", e); } } }
+public static boolean isEmpty(String str) { return str == null || str.length() == 0; }
