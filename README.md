@@ -16,9 +16,25 @@
 5. Filter trivially short methods, overly long methods, trivial getters/setters, and noisy summaries (for example URL-heavy or non-English Javadocs).
 6. Build repo-disjoint train and validation splits, then tokenize with CodeT5+ via `get_codet5_embeddings.py`.
 
+## Provided Files
+
+The notebook expects the provided assets to stay under `provided-files/` relative to the repository root. In this repository, the relevant paths are:
+
+- `provided-files/requirements.txt`
+- `provided-files/get_codet5_embeddings.py`
+- `provided-files/sample_code.txt`
+- `provided-files/sample_summary.txt`
+- `provided-files/dataset/test_dataset_tokenized.csv`
+
+Run `assignment-2-LSTM.ipynb` from the repository root so these relative paths resolve correctly. If the notebook is moved to another directory, update the paths or move the `provided-files/` folder with it.
+
 ## How to Reproduce
 
-1. Open `assignment-2-LSTM.ipynb` and run all cells. Use HPC of Google Colab. 
+1. Open `assignment-2-LSTM.ipynb` from the repository root and run all cells. Use GPU-enabled Colab or an HPC environment with CUDA if available.
+2. Keep the provided assets in `provided-files/` so these notebook paths work without modification:
+   - `provided-files/requirements.txt`
+   - `provided-files/get_codet5_embeddings.py`
+   - `provided-files/dataset/test_dataset_tokenized.csv`
 
    - Install dependencies
    - Run `get_data.py` to mine GitHub repositories and prepare the dataset
