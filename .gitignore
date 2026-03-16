@@ -1,1 +1,14 @@
 .DS_Store
+.dataset_cache/
+artifacts/
+.venv/
+.ipynb_checkpoints/
+*.csv
+*.pkl
+*.pth
+*.pt
+*.pyc
+
+logs/
+run.sh
+provided-files/
